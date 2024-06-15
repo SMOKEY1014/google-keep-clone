@@ -4,30 +4,10 @@ import App from '../../App';
 
 const Form = (props) => {
   console.log(props.AddNote);
-  //option 01
+
   const [title, setTitle] = useState("")
   const [text, setText] = useState("")
 
-  //Oprtion 2
-  // const [userInput, setUserInput] = useState({
-  //   title: "",
-  //   text: ""
-  // })
-
-  // const titleChangeHandler = (event) => setUserInput((prevState) => {
-  // return {
-  //   ...prevState,
-  //   title: event.target.value
-  // }
-  // })
-    
-  // const textChangeHandler = (event) => setUserInput((prevState) => {
-  // return {
-  //   ...prevState,
-  //   text: event.target.value
-  // }
-  // })
-  // Option 3
   const titleChangeHandler = (event) => setTitle(event.target.value);
   const textChangeHandler = (event) => setText(event.target.value);
   
